@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="view/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="view/view.css">
+    <script src="view/jquery.js"></script>
+    <script src="view/bootstrap.js"></script>
+    <script src="view/view.js"></script>
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" >
+                Tic-Toc-Game
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div id="alert" class="col-md-6 col-md-offset-3">
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Player 1</div>
+                <div id="panel1" class="panel-body">
+                    <p>Select Player</p>
+                    <select id="player1" onchange="setForm(this)" class="form-control"  style=" width:90%; margin-left: auto; margin-right: auto;">
+                        <option></option>
+                    </select>
+                    <p>Or create new player</p>
+                    <div class="input-group" >
+                        <input id="name1" type="text" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="input-group"  >
+                        <input id="marker1" type="text" class="form-control"  placeholder="Marker" required>
+                    </div>
+<!--
+                    <button id="submit1" onclick="submit(this)" type="button" class="btn btn-success"  style="display: table; margin-top: 2%; margin-left: auto; margin-right: auto;">Submit</button>
+-->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container-fluid">
+                <table>
+                    <tr>
+                        <td><div onclick="setSelection(0,0,this)"><span></span></div></td>
+                        <td><div onclick="setSelection(0,1,this)"><span></span></div></td>
+                        <td><div onclick="setSelection(0,2,this)"><span></span></div></td>
+                    </tr>
+                    <tr>
+                        <td><div onclick="setSelection(1,0,this)"><span></span></div></td>
+                        <td><div onclick="setSelection(1,1,this)"><span></span></div></td>
+                        <td><div onclick="setSelection(1,2,this)"><span></span></div></td>
+                    </tr>
+                    <tr>
+                        <td><div onclick="setSelection(2,0,this)"><span></span></div></td>
+                        <td><div onclick="setSelection(2,1,this)"><span></span></div></td>
+                        <td><div onclick="setSelection(2,2,this)"><span></span></div></td>
+                    </tr>
+                </table>
+             </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Player 2</div>
+                <div id="panel2" class="panel-body">
+                    <p>Select Player</p>
+                    <select id="player2" onchange="setForm(this)" class="form-control"  style=" width:90%; margin-left: auto; margin-right: auto;">
+                        <option></option>
+                    </select>
+                    <p>Or create new player</p>
+                    <div class="input-group" >
+                        <input id="name2" type="text" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="input-group"  >
+                        <input id="marker2" type="text" class="form-control"  placeholder="Marker" required>
+                    </div>
+                   <!-- <button id="submit2" onclick="submit(this)" type="button" class="btn btn-success"  style="display: table; margin-top: 2%; margin-left: auto; margin-right: auto;">Submit</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-md-offset-5" style="text-align: center">
+            <div type="button" onclick="submit()" class="btn btn-success btn-lg">Start New Game</div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+p{
+    margin-top: 2%;;
+}
+.input-group{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;;
+    margin-bottom: 3%;;
+}
+
+
+table{
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+}
+td{
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: top;
+}
+td div{
+    position:relative;
+    width: 100px;
+    height: 100px;
+}
+td div span{
+    color: black;
+    display:block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100px;
+    font-size: xx-large;
+}
+td div:hover{
+    border: 3px solid #f00;
+}
